@@ -9,21 +9,19 @@
             </nav>
             <div class="login-form-wrapper">
                 <div class="login-form-title-wrapper">
-                    <!-- <div class="login-form-title">OR</div> -->
                     <p>OR</p>
                 </div>
                 <fieldset class="auth-fieldset-wrapper">
-                    <!-- <fieldset class="auth-fieldset-input-wrapper">
-                        <input class="login-form-input" formcontrolname="email" placeholder="Email" type="text">
-                    </fieldset> -->
                     <form [formGroup]="loginForm" (ngSubmit)="submittLoginForm(loginForm)">
                         <fieldset class="auth-fieldset-input-wrapper">
-                            <input class="login-form-input" formControlName="email" placeholder="Email" type="text">
+                            <input class="login-form-input" formControlName="username" placeholder="Username"
+                                type="text">
                         </fieldset>
                         <div class="password-wrapper">
                             <fieldset class="auth-fieldset-input-wrapper">
                                 <input class="login-form-input" formControlName="password" placeholder="password"
-                                    type="password" autocomplete="off">
+                                    id="password" type="password" autocomplete="off">
+                                <img src="/assets/images/eye.svg" class="password-eye" id="togglePassword">
                             </fieldset>
                         </div>
                     </form>
