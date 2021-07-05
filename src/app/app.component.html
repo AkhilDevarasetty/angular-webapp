@@ -1,1 +1,41 @@
-<div class="main-wrapper"></div>
+<div class="main-auth-wrapper">
+    <section class="login-wrapper">
+        <div class="login-content-wrapper">
+            <h1>Login to Your Account</h1>
+            <div class="social-login-text">Login using social networks</div>
+            <nav class="social-icons-wrapper">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </nav>
+            <div class="login-form-wrapper">
+                <div class="login-form-title-wrapper">
+                    <!-- <div class="login-form-title">OR</div> -->
+                    <p>OR</p>
+                </div>
+                <fieldset class="auth-fieldset-wrapper">
+                    <!-- <fieldset class="auth-fieldset-input-wrapper">
+                        <input class="login-form-input" formcontrolname="email" placeholder="Email" type="text">
+                    </fieldset> -->
+                    <form [formGroup]="loginForm" (ngSubmit)="submittLoginForm(loginForm)">
+                        <fieldset class="auth-fieldset-input-wrapper">
+                            <input class="login-form-input" formControlName="email" placeholder="Email" type="text">
+                        </fieldset>
+                        <div class="password-wrapper">
+                            <fieldset class="auth-fieldset-input-wrapper">
+                                <input class="login-form-input" formControlName="password" placeholder="password"
+                                    type="password" autocomplete="off">
+                            </fieldset>
+                        </div>
+                    </form>
+                </fieldset>
+                <button type="submit" class="login-form-btn">Log In</button>
+            </div>
+        </div>
+    </section>
+    <section class="login-text-wrapper">
+        <div class="text-wrapper">
+            <h1>One Of Us?</h1>
+            <p>If you already have an account, just login in. We've missed you!</p>
+        </div>
+    </section>
+</div>

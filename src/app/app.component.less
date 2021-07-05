@@ -1,7 +1,178 @@
-.main-wrapper{
-    height: 98vh;
-    clip-path: polygon(69% 0, 100% 0, 33% 100%, 0% 100%);
-    background-color: rgba(138, 115, 73, 0.322);
-    overflow-y: hidden;
-}
+.main-auth-wrapper {
+  height: 98vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  // clip-path: polygon(69% 0, 100% 0, 33% 100%, 0% 100%);
+  background-color: #FFFF;
+  overflow-y: hidden;
 
+  .main-auth-wrapper input {
+    line-height: 50px;
+  }
+
+  .login-wrapper {
+    height: 100%;
+
+    .login-content-wrapper {
+      transform: translateY(30%);
+
+
+      h1 {
+        max-width: 100%;
+        color: #202121;
+        font-family: Aller;
+        font-size: 3.5rem;
+        letter-spacing: 0;
+        line-height: 64px;
+        margin: 0 0 16px;
+        text-align: center;
+      }
+
+      .social-login-text {
+        max-width: 100%;
+        color: #555a59;
+        font-family: Aller;
+        font-size: 1.5rem;
+        text-align: center;
+        letter-spacing: 0;
+        margin-bottom: 16px;
+      }
+
+      .social-icons-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        margin-right: 5px;
+
+        .fa {
+          padding: 17px;
+          font-size: 30px;
+          width: 24px;
+          height: 24px;
+          text-align: center;
+          text-decoration: none;
+          border-radius: 50%;
+          margin-right: 15px;
+        }
+
+        .fa-facebook:hover {
+           transform: translateY(-20%);
+        }
+
+        .fa-twitter:hover{
+          transform: translateY(-20%);
+        }
+
+        .fa-facebook {
+          background: #3B5998;
+          color: white;
+          transition: all 0.3s linear;
+        }
+
+        .fa-twitter {
+          background: #55ACEE;
+          color: white;
+          transition: all 0.3s linear;
+        }
+      }
+
+      .login-form-wrapper {
+        width: 100%;
+        max-width: 460px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        margin: 0 auto;
+
+        // background-color: #202121;
+        .login-form-title-wrapper {
+          position: relative;
+          margin-bottom: 0.5rem;
+
+          p {
+            color: #555a59;
+            font-family: Aller, serif;
+            font-size: 1rem;
+            text-transform: uppercase;
+            background-color: #fff;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0 12px;
+          }
+        }
+
+        p::before {
+          content: "";
+          display: block;
+          width: 200px;
+          height: 1px;
+          background: #EBEBEB;
+          left: 45px;
+          top: 45%;
+          position: absolute;
+        }
+
+        p::after {
+          content: "";
+          display: block;
+          width: 200px;
+          height: 1px;
+          background: #EBEBEB;
+          right: 45px;
+          position: absolute;
+          top: 45%;
+        }
+
+        .auth-fieldset-wrapper {
+          width: 100%;
+          border: none;
+          outline: 0;
+          padding: 0;
+        }
+
+        .password-wrapper {
+          position: relative;
+
+        }
+      }
+    }
+  }
+
+  .login-text-wrapper {
+    height: 100%;
+    background-image: linear-gradient(253deg, #3ba5b4 0, #38ba8a 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .text-wrapper {
+      h1 {
+        max-width: 100%;
+        color: #fff;
+        font-family: "Aller Medium", serif;
+        font-size: 3rem;
+        letter-spacing: 0;
+        line-height: 48px;
+        margin: 0 0 32px;
+        text-align: center;
+      }
+
+      p {
+        width: 100%;
+        max-width: 350px;
+        color: #fff;
+        font-family: Aller, serif;
+        font-size: 1.375rem;
+        letter-spacing: 0;
+        line-height: 36px;
+        text-align: center;
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+}
